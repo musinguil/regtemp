@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+cp -fv regtemp.service /usr/lib/systemd/system/
+mkdir /usr/share/regtemp
+cp -fv regtemp.py /usr/share/regtemp/
+systemctl enable regtemp
+systemctl start regtemp

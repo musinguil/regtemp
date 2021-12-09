@@ -1,0 +1,18 @@
+[Unit]
+Description=Run firewall rules
+# By default, anacron will not run when no AC power is connected to system.
+# If you are using systemd and want to run anacron even when running on
+# battery, you should create the following file with the specified content
+# and then call "systemctl daemon-reload":
+#    /etc/systemd/system/anacron.service.d/on-ac.conf:
+#        [Unit]
+#        ConditionACPower=
+
+[Service]
+ExecStart=/usr/bin/python3.7 /usr/share/regtemp/regtemp.py
+# IgnoreSIGPIPE=false
+# KillMode=mixed
+# Use SIGUSR1 to stop gracefully
+
+[Install]
+WantedBy=multi-user.target

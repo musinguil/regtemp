@@ -1,15 +1,12 @@
 # regtemp
 Raspberry service created to avoid overheating of the CPU
 
-<details>
-  <summary>Installation</summary>
-  <p>
-    Follow instructions to install the service
-  </p>
-    ```sh
-    git clone https://github.com/musinguil/regtemp.git
-    cd regtemp
-    sudo chmod +x INSTALL
-    ./INSTALL
-    ```
-</details>
+##Installation
+
+Follow instructions to install the service
+```
+  git clone https://github.com/musinguil/regtemp.git
+  cd regtemp
+  sudo chmod +x INSTALL
+  ./INSTALL
+```

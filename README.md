@@ -1,7 +1,7 @@
 # regtemp
 Raspberry service created to avoid overheating of the CPU
 
-##Installation
+## Installation
 
 Follow instructions to install the service
 ```
